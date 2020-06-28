@@ -40,6 +40,8 @@ The algoritm takes **atmost 81 iterations** for solving the entire puzzle.
  ### Models
  
 1. **Digit Recognition**
+
+The model was trained using **Adam optimizer** with learning rate 0.001 ~ 0.000001.
  ```
  _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
@@ -69,6 +71,8 @@ _________________________________________________________________
 * Epochs: 196, Size: 19.6MB
 
 2. **Sudoku Solver**
+
+The model was trained using **Adam optimizer** with learning rate 0.001 ~ 0.000001.
 ```
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
