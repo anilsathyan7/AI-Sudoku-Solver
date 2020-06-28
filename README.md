@@ -13,7 +13,7 @@ Here our **input** is an **image of sudoku** puzzle and we need to produce a cor
 4. Predict solution using neural network in an iterative manner
 5. Verify the solution and plot the resuts on the input image
 
-![picture](https://drive.google.com/uc?export=view&id=1VnRccmRBtTRFhk3Oq5ThfZbJQ92RYAkB)
+![screenshot](https://drive.google.com/uc?export=view&id=1VnRccmRBtTRFhk3Oq5ThfZbJQ92RYAkB)
 
 
 
