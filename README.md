@@ -65,10 +65,8 @@ Trainable params: 1,625,866
 Non-trainable params: 0
 _________________________________________________________________
 ```
-
-**Loss:0.14, Accuracy:96%**
-
-**Epochs:196, Size: 19.6MB**
+* Loss: 0.14, Accuracy: 96%
+* Epochs: 196, Size: 19.6MB
 
 2. **Sudoku Solver**
 ```
@@ -116,6 +114,5 @@ Trainable params: 20,364,372
 Non-trainable params: 810
 _________________________________________________________________
 ```
-**Loss:0.24, Accuracy:90%** 
-
-**Epochs:245, Size: 244,5MB**
+* Loss: 0.24, Accuracy: 90%
+* Epochs: 245, Size: 244.5MB
