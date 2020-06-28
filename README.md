@@ -41,7 +41,7 @@ The algoritm takes **atmost 81 iterations** for solving the entire puzzle.
  
 1. **Digit Recognition**
 
-The model was trained using **Adam optimizer** with learning rate 0.001 ~ 0.000001.
+The model was trained using **Adam optimizer** with a learning rate 0.001 ~ 0.000001 and **SCCE loss** function.
  ```
  _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
@@ -72,7 +72,7 @@ _________________________________________________________________
 
 2. **Sudoku Solver**
 
-The model was trained using **Adam optimizer** with learning rate 0.001 ~ 0.000001.
+The model was trained using **Adam optimizer** with a learning rate 0.001 ~ 0.000001 and **SCCE loss** function.
 ```
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
