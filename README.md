@@ -22,6 +22,11 @@ Here our **input** is an **image of sudoku** puzzle and we need to produce a cor
  The **digit recognition** model was trained using the entire **SVHN dataset**(train, test and extra) in grayscale mode. It is used to classify digits 0 to 9.
  The **sudoku solver** model was trained using a dataset of **10 million** puzzles. The inputs for this model contains **9x9 arrays** of integers representing the puzzles, such that **zeros** represent the **unfilled** positions.
  
+ The **numpy dataset** used for training was created by combining the following **two datasets in csv** formats.
+ 
+ 1. [One Million Sudoku Puzzles](https://www.kaggle.com/bryanpark/sudoku)
+ 2. [Nine Million Sudoku Puzzles](https://www.kaggle.com/rohanrao/sudoku)
+ 
  ### Algorithm
  
  A **single iteration** of the model, as such does not seem to produce correct results for all the positions in the input.
