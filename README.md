@@ -41,6 +41,13 @@ Here our **input** is an **image of sudoku** puzzle and we need to produce a cor
 * Repeat the iterations with modified input(i.e 'puzzle'), until all elements are filled (ie. no zeros).
 
 The algoritm takes **atmost 81 iterations** for solving the entire puzzle.
+
+### Inputs
+
+* The input puzzle should be a **grayscale or rgb** image. 
+* The images should **not be blurry or shaky**.
+* It should be a **close-up** image of the puzzle from a **flat** surface.
+* The puzzle should be in **printed format** eg.: paper or screen 
  
  ### Models
  
