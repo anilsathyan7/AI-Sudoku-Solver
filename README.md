@@ -47,7 +47,8 @@ The algoritm takes **atmost 81 iterations** for solving the entire puzzle.
 * The input puzzle should be a **grayscale or rgb** image. 
 * The images should **not be blurry or shaky**.
 * It should be a **close-up** image of the puzzle from a **flat** surface.
-* The puzzle should be in **printed format** eg.: paper or screen 
+* The puzzle should be in **printed format** eg.: paper or screen
+* The puzzle image should not contain **marks, stains** or unnecessary patterns.
  
  ### Models
  
