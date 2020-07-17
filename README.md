@@ -37,10 +37,10 @@ Here our **input** is an **image of sudoku** puzzle and we need to produce a cor
 * Each iteration produces an output array of 9x9 with numbers 1...9 (i.e 'out').
 * For each such output array, 'maxp'(9x9) contains the corresponding probability values.
 * For each filled(non-zero) element in input array we set corresponding probability in 'maxp' o -1.
-* Now, find the maximum elements in 'maxp' and set the corresponding positions of input with corresponding values from current output.
+* Now, find the maximum element(single) in 'maxp' and set the corresponding position of input with corresponding values from current output.
 * Repeat the iterations with modified input(i.e 'puzzle'), until all elements are filled (ie. no zeros).
 
-The algoritm takes **atmost 81 iterations** for solving the entire puzzle.
+The algoritm takes N iterations for solving the entire puzzle, where N represenets the number of unfilled positions.
 
 ### Inputs
 
@@ -133,3 +133,11 @@ _________________________________________________________________
 ```
 * Loss: 0.24, Accuracy: 90%
 * Epochs: 245, Size: 244.5MB
+
+## References
+
+* https://github.com/Kyubyong/sudoku
+* https://github.com/shivaverma/Sudoku-Solver
+* https://aishack.in/tutorials/sudoku-grabber-opencv-plot
+* https://keras.io/examples/vision/mnist_convnet/
+* [OpenCV: Geometric Transformations of Images](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_geometric_transformations/py_geometric_transformations.html)
