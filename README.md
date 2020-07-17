@@ -13,7 +13,7 @@ Here our **input** is an **image of sudoku** puzzle and we need to produce a cor
 4. Predict solution using neural network in an iterative manner
 5. Verify the solution and plot the resuts on the input image
 
-![screenshot](https://drive.google.com/uc?export=view&id=1VnRccmRBtTRFhk3Oq5ThfZbJQ92RYAkB)
+![screenshot](https://docs.google.com/drawings/d/e/2PACX-1vRMOwiXYg9cQ4OGfQxvuF2rxkJRHLOoJYJfAFnC2X_Ggxh2BACz1e4M2OV7h3iSjC8vzJp8SR9LP9sY/pub?w=921&h=606)
 
  We use **tensorflow-keras** library for training(prediction) the neural network and **opencv** library for image processing.
  The **input** sudoku puzzeles are assumed to be **images** of printed version of the puzzle.
