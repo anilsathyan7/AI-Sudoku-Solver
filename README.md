@@ -138,6 +138,7 @@ _________________________________________________________________
 
 * https://github.com/Kyubyong/sudoku
 * https://github.com/shivaverma/Sudoku-Solver
+* https://keras.io/examples/vision/mnist_convnet
+* https://www.tensorflow.org/datasets/keras_example
 * https://aishack.in/tutorials/sudoku-grabber-opencv-plot
-* https://keras.io/examples/vision/mnist_convnet/
 * [OpenCV: Geometric Transformations of Images](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_geometric_transformations/py_geometric_transformations.html)
