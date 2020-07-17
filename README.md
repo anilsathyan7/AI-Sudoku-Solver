@@ -16,7 +16,7 @@ Here our **input** is an **image of sudoku** puzzle and we need to produce a cor
 ![screenshot](https://docs.google.com/drawings/d/e/2PACX-1vRMOwiXYg9cQ4OGfQxvuF2rxkJRHLOoJYJfAFnC2X_Ggxh2BACz1e4M2OV7h3iSjC8vzJp8SR9LP9sY/pub?w=921&h=606)
 
  We use **tensorflow-keras** library for training(prediction) the neural network and **opencv** library for image processing.
- The **input** sudoku puzzeles are assumed to be **images** of printed version of the puzzle.
+ The **input** sudoku puzzles are assumed to be **images** of printed version of the puzzle.
  ### Dataset
  
  The **digit recognition** model was trained using the entire **SVHN dataset**(train, test and extra) in grayscale mode. It is used to classify digits 0 to 9.
