@@ -17,7 +17,7 @@ Here our **input** is an **image of sudoku** puzzle and we need to produce a cor
 
  We use **tensorflow-keras** library for training(prediction) the neural network and **opencv** library for image processing.
  The **input** sudoku puzzles are assumed to be **images** of printed version of the puzzle.
- ### Dataset
+ ### Training Datasets
  
  The **digit recognition** model was trained using the entire **SVHN dataset**(train, test and extra) in grayscale mode. It is used to classify digits 0 to 9.
  The **sudoku solver** model was trained using a dataset of **10 million** puzzles. The inputs for this model contains **9x9 arrays** of integers representing the puzzles, such that **zeros** represent the **unfilled** positions.
@@ -27,7 +27,7 @@ Here our **input** is an **image of sudoku** puzzle and we need to produce a cor
  1. [One Million Sudoku Puzzles](https://www.kaggle.com/bryanpark/sudoku)
  2. [Nine Million Sudoku Puzzles](https://www.kaggle.com/rohanrao/sudoku)
  
- ### Algorithm
+ ### Sudoku Solver Algorithm
  
  A **single iteration** of the model, as such does not seem to produce correct results for all the positions in the input.
  So, we follow a **iterative approach** of feeding the partial solution of one iteration as input to next iteration.
@@ -42,7 +42,7 @@ Here our **input** is an **image of sudoku** puzzle and we need to produce a cor
 
 The algoritm takes N iterations for solving the entire puzzle, where N represenets the number of unfilled positions.
 
-### Inputs
+### Digit Recognition Inputs
 
 * The input puzzle should be a **grayscale or rgb** image. 
 * The images should **not be blurry or shaky**.
@@ -50,7 +50,7 @@ The algoritm takes N iterations for solving the entire puzzle, where N represene
 * The puzzle should be in **printed format** eg.: paper or screen
 * The puzzle image should not contain **marks, stains** or unnecessary patterns.
  
- ### Models
+ ### Sudoku Models
  
 1. **Digit Recognition**
 
