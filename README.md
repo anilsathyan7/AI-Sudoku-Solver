@@ -223,6 +223,7 @@ _________________________________________________________________
 
 * https://github.com/Kyubyong/sudoku
 * https://github.com/shivaverma/Sudoku-Solver
+* https://github.com/neeru1207/AI_Sudoku
 * https://keras.io/examples/vision/mnist_convnet
 * https://www.tensorflow.org/datasets/keras_example
 * https://aishack.in/tutorials/sudoku-grabber-opencv-plot
