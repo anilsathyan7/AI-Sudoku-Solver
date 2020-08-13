@@ -219,6 +219,49 @@ _________________________________________________________________
 * Epochs: 20, Size: 255.3MB
 
 
+**b) Recurrent Model**
+
+The model was trained using **Adam optimizer** with a learning rate 0.001 and **MSE loss** function.
+Here, there are **no conv layers** and it heavily uses dense layers. 
+
+* The **inputs are one-hot-encoded** version of the puzzle **constraints** (row, column and block) and they have **varaible lengths**, proportional to number of unfilled positions. 
+* During training, the model sequentially finds the **most probalble output digit** and feeds this partially filled puzzle to next iteration in  a **recurrent** fashion.
+* The **loss** is computed after the **final step**, when all the remaining positions are filled.
+
+```-----------------------------------------------------------------------
+      Layer (type)         Input Shape         Param #     Tr. Param #
+=======================================================================
+          Linear-1             [1, 27]          14,336          14,336
+            ReLU-2            [1, 512]               0               0
+          Linear-3            [1, 512]         262,656         262,656
+            ReLU-4            [1, 512]               0               0
+          Linear-5            [1, 512]         262,656         262,656
+            ReLU-6            [1, 512]               0               0
+          Linear-7            [1, 512]         262,656         262,656
+            ReLU-8            [1, 512]               0               0
+          Linear-9            [1, 512]         262,656         262,656
+           ReLU-10            [1, 512]               0               0
+         Linear-11            [1, 512]         262,656         262,656
+           ReLU-12            [1, 512]               0               0
+         Linear-13            [1, 512]         262,656         262,656
+           ReLU-14            [1, 512]               0               0
+         Linear-15            [1, 512]         262,656         262,656
+           ReLU-16            [1, 512]               0               0
+         Linear-17            [1, 512]         262,656         262,656
+           ReLU-18            [1, 512]               0               0
+         Linear-19            [1, 512]           4,617           4,617
+        Softmax-20              [1, 9]               0               0
+=======================================================================
+Total params: 2,120,201
+Trainable params: 2,120,201
+Non-trainable params: 0
+-----------------------------------------------------------------------
+```
+* Loss: 0.005, Accuracy: 94%
+* Epochs: 4, Size: 8.6MB
+
+
+
 ## References
 
 * https://github.com/Kyubyong/sudoku
