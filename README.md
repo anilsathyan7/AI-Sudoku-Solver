@@ -225,8 +225,8 @@ The model was trained using **Adam optimizer** with a learning rate 0.001 and **
 Here, there are **no conv layers** and it heavily uses dense layers. 
 
 * The **inputs are one-hot-encoded** version of the puzzle **constraints** (row, column and block) and they have **varaible lengths**, proportional to number of unfilled positions. 
-* During training, the model sequentially finds the **most probalble output digit** and feeds this partially filled puzzle to next iteration in  a **recurrent** fashion.
-* The **loss** is computed after the **final step**, when all the remaining positions are filled.
+* During training, the model sequentially finds the **most probalble output digit** and feeds this partially filled puzzle to the next iteration in  a **recurrent** fashion.
+* The **loss** is computed only after the **final step**, when all the remaining positions are filled.
 
 ```-----------------------------------------------------------------------
       Layer (type)         Input Shape         Param #     Tr. Param #
