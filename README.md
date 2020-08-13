@@ -219,7 +219,7 @@ _________________________________________________________________
 * Epochs: 20, Size: 255.3MB
 
 
-**b) Recurrent Model**
+**c) Recurrent Model**
 
 The model was trained using **Adam optimizer** with a learning rate 0.001 and **MSE loss** function.
 Here, there are **no conv layers** and it heavily uses dense layers. 
@@ -266,6 +266,7 @@ Non-trainable params: 0
 
 * https://github.com/Kyubyong/sudoku
 * https://github.com/shivaverma/Sudoku-Solver
+* https://github.com/modulai/pytorch_sudoku
 * https://github.com/neeru1207/AI_Sudoku
 * https://keras.io/examples/vision/mnist_convnet
 * https://www.tensorflow.org/datasets/keras_example
