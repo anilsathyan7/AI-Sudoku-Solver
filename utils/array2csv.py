@@ -16,4 +16,4 @@ def array2csv(puzzle, solution):
   # Save combined data in csv format
   np.savetxt('sudoku.csv', np.column_stack((puzlist, sollist)), delimiter=',', fmt='%s', header='quizzes,solutions', comments='')
 
-array2csv(puzzle='test_puzzles_2.npy',solution='test_solutions_2.npy')
+array2csv(puzzle='puzzles.npy',solution='solutions.npy')
