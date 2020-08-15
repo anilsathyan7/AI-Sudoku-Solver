@@ -260,7 +260,15 @@ Non-trainable params: 0
 * Loss: 0.005, Accuracy: 94%
 * Epochs: 4, Size: 8.6MB
 
+## Testing Sudoku Solver Models
 
+The test dataset consists of **30** puzzles from website: https://1sudoku.com and **30** random puzzles from **newspapers**. They mostly contain difficulties ranging from **easy to medium**. A puzzle is considered to be solved only if **all its elements are predicted correctly** .
+
+| Model Type     |  Performance |
+| -------------- | --------- |
+| Dense Model |       40/60 |
+| Conv Model |      50/60 |
+| Recurrent Model |  25/60 |  
 
 ## References
 
