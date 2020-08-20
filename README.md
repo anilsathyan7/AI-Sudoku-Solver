@@ -275,8 +275,10 @@ The test dataset consists of **30** puzzles from website: https://1sudoku.com an
 * Even though the **dense model** has faster convergance and training, it is **not able to generalize** well on test datasets.
 * The **recurrent model** easily learns the puzzles from a small and easy training dataset; but it is **unable to handle difficult/medium puzzles**.
 * Training the **recurrent model** on a large dataset consumes lot of **time** and resource.
-* In comparison to other models, the **conv model** is able to predict and **generalize well** on test dataset, after being trained on the same training set.
+* In comparison to other models, the **conv model** is able to predict and **generalize well** on test dataset, after being trained on the same training set. On the flip side, this model is **heavier** than other models in terms of parameters and resource usage.
 * The original **dataset** mostly contains **easy/medium difficulty**, with an average **47 unfilled**(zero) elements or 34 clues(filled).
+* **None of the  models** seems to **converge** on training with a [sudoku dataset](https://www.kaggle.com/radcliffe/3-million-sudoku-puzzles-with-ratings) containing **hard puzzles** (57 average unfilled).
+* The models only seems to predict correct solution for **easy or medium difficult** puzzles, which can be easily solved by simple [scanning techniques](https://www.conceptispuzzles.com/index.aspx?uri=puzzle/sudoku/techniques) and thus does **not guarantee a complete solution** in every case.
 
 ## References
 
