@@ -279,7 +279,17 @@ The test dataset consists of **30** puzzles from website: https://1sudoku.com an
 * The original **dataset** mostly contains **easy/medium difficulty** puzzles, with an average of **47 unfilled**(zero) elements or 34 clues(filled).
 * **None of the  models** seems to **converge** on training with a [sudoku dataset](https://www.kaggle.com/radcliffe/3-million-sudoku-puzzles-with-ratings) containing **hard puzzles** (57 average unfilled).
 * Overall, the models only seems to predict correct solution for **easy or medium difficult** puzzles, which can be easily solved by simple [scanning techniques](https://www.conceptispuzzles.com/index.aspx?uri=puzzle/sudoku/techniques) and thus does **not guarantee a complete solution** in every case.
-* The digit recognition model may not work well with **handwritten digits**, since they were trained on a dataset with non-handwritten digits (mostly). If the puzzle image are **highly blurred, distorted or noisy**, the algorithm  may fail to locate the puzzle and/or recognize the digits. 
+* The digit recognition model may not work well with **handwritten digits**, since they were trained on a dataset with non-handwritten digits (mostly). If the puzzle image are **highly blurred, distorted or noisy**, the algorithm  may fail to locate the puzzle and/or recognize the digits.
+
+### Sudoku Solving Techniques
+
+We can also solve sudoku **without using neural networks**. In fact, some of these methods have considerable advantages over neural networks for solving sudoku puzzles. None of these methods require training and most of them guarantees a complete solution; even if it takes longer time to find the solution. 
+
+* Backtracking (brute force)
+* Dancing Links (exact cover)
+* Genetic Algorithm (stochastic search)
+* Constraint Propagation and Search (peter norvig)
+* Sudoku Solving Strategies (explicit rules)
 
 ## References
 
@@ -291,4 +301,6 @@ The test dataset consists of **30** puzzles from website: https://1sudoku.com an
 * https://www.tensorflow.org/datasets/keras_example
 * https://aishack.in/tutorials/sudoku-grabber-opencv-plot
 * https://www.pyimagesearch.com/2020/08/10/opencv-sudoku-solver-and-ocr
+* [Online Sudoku Solver](https://anysudokusolver.com)
+* [Python Sudoku Solver](https://pypi.org/project/py-sudoku/)
 * [OpenCV: Geometric Transformations of Images](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_geometric_transformations/py_geometric_transformations.html)
