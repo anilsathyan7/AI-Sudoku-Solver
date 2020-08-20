@@ -279,7 +279,7 @@ The test dataset consists of **30** puzzles from website: https://1sudoku.com an
 * The original **dataset** mostly contains **easy/medium difficulty** puzzles, with an average of **47 unfilled**(zero) elements or 34 clues(filled).
 * **None of the  models** seems to **converge** on training with a [sudoku dataset](https://www.kaggle.com/radcliffe/3-million-sudoku-puzzles-with-ratings) containing **hard puzzles** (57 average unfilled).
 * Overall, the models only seems to predict correct solution for **easy or medium difficult** puzzles, which can be easily solved by simple [scanning techniques](https://www.conceptispuzzles.com/index.aspx?uri=puzzle/sudoku/techniques) and thus does **not guarantee a complete solution** in every case.
-* The digit recognition model may not work well with **handwritten digits**, since they were trained on a dataset with non-handwritten digits (mostly). If the puzzle image are **highly distoretd, blurred or noisy**, the algorithm  may fail to locate the puzzle and/or recognize the digits. 
+* The digit recognition model may not work well with **handwritten digits**, since they were trained on a dataset with non-handwritten digits (mostly). If the puzzle image are **highly blurred, distorted or noisy**, the algorithm  may fail to locate the puzzle and/or recognize the digits. 
 
 ## References
 
