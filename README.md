@@ -262,13 +262,21 @@ Non-trainable params: 0
 
 ### Testing Sudoku Solver Models
 
-The test dataset consists of **30** puzzles from website: https://1sudoku.com and **30** random puzzles from **newspapers**. They mostly contain difficulties ranging from **easy to medium**. A puzzle is considered to be solved only if **all its elements are predicted correctly** .
+The test dataset consists of **30** puzzles from website: https://1sudoku.com and **30** random puzzles from **newspapers**. They mostly contain difficulties ranging from **easy to medium**. A puzzle is considered to be solved only if **all its elements are predicted correctly** . All of the models were trained using the same dataset.
 
 | Model Type     |  Performance |
 | -------------- | --------- |
 | Dense Model |       40/60 |
 | Conv Model |      50/60 |
 | Recurrent Model |  25/60 |  
+
+### Drawbacks and Limitations
+
+* Even though the **dense model** has faster convergance and training, it is **not able to generalize** well on test datasets.
+* The **recurrent model** easily learns the puzzles from a small and easy training dataset; but it is **unable to handle difficult/medium puzzles**.
+* Training the **recurrent model** on a large dataset consumes lot of **time** and resource.
+* In comparison to other models, the **conv model** is able to predict and **generalize well** on test dataset, after being trained on the same training set.
+* The original **dataset** mostly contains **easy/medium difficulty**, with an average **47 unfilled**(zero) elements or 34 clues(filled).
 
 ## References
 
