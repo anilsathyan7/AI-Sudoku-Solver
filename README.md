@@ -290,4 +290,5 @@ The test dataset consists of **30** puzzles from website: https://1sudoku.com an
 * https://keras.io/examples/vision/mnist_convnet
 * https://www.tensorflow.org/datasets/keras_example
 * https://aishack.in/tutorials/sudoku-grabber-opencv-plot
+* https://www.pyimagesearch.com/2020/08/10/opencv-sudoku-solver-and-ocr
 * [OpenCV: Geometric Transformations of Images](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_geometric_transformations/py_geometric_transformations.html)
