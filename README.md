@@ -281,6 +281,33 @@ The test dataset consists of **30** puzzles from website: https://1sudoku.com an
 * Overall, the models only seems to predict correct solution for **easy or medium difficult** puzzles, which can be easily solved by simple [scanning techniques](https://www.conceptispuzzles.com/index.aspx?uri=puzzle/sudoku/techniques) and thus does **not guarantee a complete solution** in every case.
 * The digit recognition model may not work well with **handwritten digits**, since they were trained on a dataset with non-handwritten digits (mostly). If the puzzle image are **highly blurred, distorted or noisy**, the algorithm  may fail to locate the puzzle and/or recognize the digits.
 
+### Solving Sudoku With Pytesseract And Pysudoku
+
+The easiest way to solve a sudoku puzzle is by using **libraries or API's**. [Py-sudoku](https://pypi.org/project/py-sudoku/) is a python package which can be used to **create or solve** sudoku puzzles with any difficulty levels, using few lines of code.[Py-tesseract](https://pypi.org/project/pytesseract/) is an optical character recognition (OCR) tool for python. It acts as a wrapper for **Google’s Tesseract-OCR Engine** ,and can be used to recognize and “read” the text embedded in images.
+
+**Steps:-**
+* Preprocess the input image and remove background
+* Crop subregions containing digits from the grid (roi's)
+* Predict numbers from image crops using pytesseract (ocr)
+* Predict the solution using py-sudoku module
+* Plot the resuts on the input image
+
+**Sample Code:-**
+```
+# Perform ocr on a single character in a cell roi
+ocr_result=pytesseract.image_to_string(roi, config='--psm 10 --oem 0  -c tessedit_char_whitelist=123456789')
+
+.........................................
+.........................................
+
+# Solve the sudoku puzzle using py-sudoku
+puzzle = Sudoku(3, 3, board=sudoku_numbers.tolist())
+print(puzzle)
+
+result = puzzle.solve()
+result.show_full()
+```
+
 ### Sudoku Solving Techniques
 
 We can also solve sudoku **without using neural networks**. In fact, some of these methods have considerable advantages over neural networks for solving sudoku puzzles. None of these methods require training and most of them guarantees a complete solution; even if it takes longer time to find the solution. 
