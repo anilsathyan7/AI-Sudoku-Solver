@@ -318,6 +318,11 @@ We can also solve sudoku **without using neural networks**. In fact, some of the
 * Constraint Propagation and Search (peter norvig)
 * Sudoku Solving Strategies (explicit rules)
 
+Also, there are somne **advanced techniques** for solving sudoku using neural networks. These methods use a **different network structure or learning mechnanisms** for training the neural networks.
+
+* Recurrent Relational Networks
+* Reinforcement Learning With Look-Ahead Search
+
 ## References
 
 * https://github.com/Kyubyong/sudoku
@@ -330,4 +335,5 @@ We can also solve sudoku **without using neural networks**. In fact, some of the
 * https://www.pyimagesearch.com/2020/08/10/opencv-sudoku-solver-and-ocr
 * [Online Sudoku Solver](https://anysudokusolver.com)
 * [Python Sudoku Solver](https://pypi.org/project/py-sudoku/)
-* [OpenCV: Geometric Transformations of Images](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_geometric_transformations/py_geometric_transformations.html)
+* [OpenCV: Geometric Transformations](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_geometric_transformations/py_geometric_transformations.html)
+* [OCR With Pytesseract](https://nanonets.com/blog/ocr-with-tesseract)
